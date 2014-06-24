@@ -3,6 +3,9 @@
  */
 
 @import "bootstrap/bootstrap.less";
+@import "site-variables.less";
+@import "custom-mixins.less";
+
 
 /* ==========================================================================
    Base
@@ -10,14 +13,55 @@
 
 body { }
 
+a{
+   color: @primary-color;
+}
 
+.btn-primary{
+   .gradient(@primary-color, @secondary-color);
+}
 
 /* ==========================================================================
    Header
    ========================================================================== */
 
-.banner { }
+.navbar-top {
+   .navbar-brand{
+      background-image: url( '../img/granitech-logo.svg' );
+      background-size: 150px;
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      width: 200px;
+      height: 70px;
+      padding: 0;
+      margin: 10px 0;
+   }
+   .navbar-nav{
+      margin-top: 30px;
+      font-size: 1.2em;
+   }
+}
 
+.masthead{
+   max-height: 400px;
+   overflow: hidden;
+   img.header-image{
+      width: 100%;
+      height: auto;
+   }
+}
+
+.navbar-secondary{
+   border-radius: 0;
+   .gradient(@primary-color, @secondary-color);
+   font-size: 1.4em;
+   a{
+      color: whitesmoke;
+      &:hover{
+         color: @dark-accent;
+      }
+   }
+}
 
 
 /* ==========================================================================

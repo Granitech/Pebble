@@ -1,4 +1,4 @@
-<header class="banner navbar navbar-default navbar-static-top" role="banner">
+<header class="banner navbar-top navbar-primary navbar-default navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,7 +25,7 @@
     <!--   <a class="brand" href="<?php echo home_url('/') ?>"><?php bloginfo('name'); ?></a> -->
   </figure>
 </section>
-<section class="banner navbar navbar-default" role="banner">
+<section class="banner navbar navbar-secondary" role="banner">
   <div class="container">
         <nav class="collapse navbar-collapse" role="navigation">
         <?php if (has_nav_menu('secondary_navigation')) :
