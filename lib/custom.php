@@ -31,3 +31,10 @@ function pebble_enqueue_font_stack(){
     wp_enqueue_style('lora');
 }
 add_action( 'wp_enqueue_scripts', 'pebble_enqueue_font_stack' );
+
+/**
+* The post tags list
+*/
+function pebble_custom_classifications(){
+
+}
