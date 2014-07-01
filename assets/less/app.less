@@ -12,12 +12,12 @@
    ========================================================================== */
 
 body {
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'Lato', Georgia, serif;
 }
 
 h {
    &1, &2, &3, &4, &5, &6 {
-     font-family: 'Istok Web', Verdana, Helvetica, sans-serif;
+     font-family: 'Oswald', Verdana, Helvetica, sans-serif;
    }
 }
 
@@ -95,7 +95,7 @@ a{
          clear: both;
          padding-bottom: 1em;
          margin-bottom: 2em;
-         border-bottom: 2px solid @light-accent;
+         border-bottom: 1px solid @light-accent;
       }
 }
 
@@ -104,7 +104,7 @@ a{
 
 .featured-image{
    img{
-      width: 100%;
+      max-width: 100%;
       height: auto;
    }
 }
@@ -113,6 +113,26 @@ a{
    // font-size: 1.4em;
 }
 
+.taxonomy-terms{
+   margin: 0 0 1em 0;
+   padding: 0;
+
+   li{
+      background: @secondary-color;
+      padding: 5px 10px;
+      margin-right: 10px;
+      display: inline;
+      // box-shadow: 1px 1px 3px @light-accent;
+      a{
+         // text-transform: uppercase;
+         color: @off-white;
+         // &:before{
+         //    margin-right: 5px;
+         //    font-size: 6px;
+         // }
+      }
+   }
+}
 
 /* ==========================================================================
    Sidebar
